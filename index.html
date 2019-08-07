@@ -14,17 +14,17 @@
 
 </head>
 
-<body id="backDrop">
+<body id="backDrop" style="background-color: aqua">
     <div class="container">
         <div class="row">
-            <div class="col-md-4">
+            <div class="col-md-4" style="background-color: chocolate">
                 <h1>Crystal Collector!</h1>
             </div>
         </div>
     </div>
     <div class="container">
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-6" style="background-color: coral">
                 <p>
                     You will be given a random number to start the game
                 </p>
@@ -43,19 +43,23 @@
                     Each time the game restarts, the value of each crystal will change.
                 </p>
                 <br>
-                <div class="row">
-                    <div class="col-md-6">
-                        <h2> <span id="number-to-add"></span></h2>
-                    </div>
-                    <div class="colmd-3">
-                        
-                    </div>
-                </div>
+
             </div>
         </div>
     </div>
+    </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2" style="background-color:darkgreen">
+                <h2> <span id="number-to-add"></span></h2>
+            </div>
+            <div class="col-md-1" style="background-color: darkred">
+                <p id="wins">Wins: </p>
+                <p id="losses">Losses: </p>
+            </div>
 
-    <script type="text/javascript" src="assets/javascript/game.js"></script>
+            <script type="text/javascript" src="assets/javascript/game.js"></script>
 
 
 </body>
