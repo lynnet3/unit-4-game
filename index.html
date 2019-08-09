@@ -9,22 +9,22 @@
     <!-- Added link to the jQuery Library -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!-- Added a link to Bootstrap  -->
-    <link rel = "stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <link rel = "stylesheet" type = "text/css" href = "assets/css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
 </head>
 
-<body id = "backDrop" style = "background-color: aqua">
-    <div class = "container">
-        <div class = "row">
-            <div class = "col-md-4" style="background-color: chocolate">
+<body id="backDrop" style="background-color: aqua">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4" style="background-color: chocolate">
                 <h1>Crystal Collector!</h1>
             </div>
         </div>
     </div>
-    <div class = "container">
-        <div class = "row">
-            <div class = "col-md-6" style = "background-color: coral">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6" style="background-color: coral">
                 <p>
                     You will be given a random number to start the game
                 </p>
@@ -49,46 +49,46 @@
     </div>
 
 
-    <div class = "container">
-        <div class = "row">
-            <div class = "col-md-2" style="background-color:darkgreen">
-                <h2> <span id = "number-to-add"></span></h2>
-            </div>
-            <div class = "col-md-1" style="background-color: darkred">
-                <p id = "wins"></p>
-                <p id = "losses"></p>
-            </div>
-        </div>
-    </div>
-    <di class = "container">
-        <div class = "row">
-            <div class = "col-md-1">
-                <img id = "magenta">
-            </div>
-            <div class = "col-md-1">
-                <img id = "blue">
-            </div>
-            <div class = "col-md-1">
-                <img id = "green">
-            </div>
-            <div class = "col-md-1">
-                <img id ="red">
-            </div>
-        </div>
-    </div>
     <div class="container">
         <div class="row">
-            <div class="col-md-3" style="background-color: blueviolet">
-            <p> Your score is:</p>
-                <div class= "row">
-                    <div class="col-md-12" style="background-color: darkgoldenrod">
-                        <h2 id="your-score"></h2>
-                    </div>
-                </div>
-        </div>
+            <div class="col-md-2" style="background-color:darkgreen">
+                <h2> <span id="number-to-add"></span></h2>
+            </div>
+            <div class="col-md-1" style="background-color: darkred">
+                <p id="wins"></p>
+                <p id="losses"></p>
+            </div>
         </div>
     </div>
-    <script type = "text/javascript" src = "assets/javascript/game.js"></script>
+    <di class="crystalContainer">
+        <div class="row">
+            <div class="col-md-2">
+                <button id="magenta"><img src='assets/images/magenta_crystal-512-100x100.png'></button>
+            </div>
+            <div class="col-md-2">
+                <button id="blue"><img src='assets/images/blue_crystal-512-100x100.png'></button>
+            </div>
+            <div class="col-md-2">
+                <button id="green"><img src='assets/images/green_crystal_copy-512-100x100.png'></button>
+            </div>
+            <div class="col-md-2">
+                <button id="red"> <img src='assets/images/red_crystal-512-100x100.png'></button>
+            </div>
+        </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3" style="background-color: blueviolet">
+                    <p> Your score is:</p>
+                    <div class="row">
+                        <div class="col-md-12" style="background-color: darkgoldenrod">
+                            <h2 id="your-score"></h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="assets/javascript/game.js"></script>
 
 
 </body>
