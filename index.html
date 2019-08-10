@@ -10,21 +10,22 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!-- Added a link to Bootstrap  -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <!--<link rel="stylesheet" type="text/css" href="assets/css/reset.css">-->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-
+    
 </head>
 
-<body id="backDrop" style="background-color: aqua">
+<body style="background-image:url('assets/images/background.jpg')">
     <div class="container">
         <div class="row">
-            <div class="col-md-4" style="background-color: chocolate">
+            <div class="col-md-4" id="title">
                 <h1>Crystal Collector!</h1>
             </div>
         </div>
     </div>
     <div class="container">
         <div class="row">
-            <div class="col-md-6" style="background-color: coral">
+            <div class="col-md-6" id="instructions">
                 <p>
                     You will be given a random number to start the game
                 </p>
@@ -51,10 +52,10 @@
 
     <div class="container">
         <div class="row">
-            <div class="col-md-2" style="background-color:darkgreen">
+            <div class="col-md-2">
                 <h2> <span id="number-to-add"></span></h2>
             </div>
-            <div class="col-md-1" style="background-color: darkred">
+            <div class="col-md-1" id="wins-losses">
                 <p id="wins"></p>
                 <p id="losses"></p>
             </div>
@@ -78,10 +79,10 @@
         </div>
         <div class="container">
             <div class="row">
-                <div class="col-md-3" style="background-color: blueviolet">
-                    <p> Your score is:</p>
+                <div class="col-md-3">
+                    <p id> Your score is:</p>
                     <div class="row">
-                        <div class="col-md-12" style="background-color: darkgoldenrod">
+                        <div class="col-md-12">
                             <h2 id="your-score"></h2>
                         </div>
                     </div>

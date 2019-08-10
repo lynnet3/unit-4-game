@@ -35,19 +35,6 @@ $(document).ready(function () {
     var red = Math.floor(Math.random() * 12) + 1;
     console.log(red);
     //$("#red").html("<img src='assets/images/red_crystal-512-100x100.png'>");
-
-    function winner() {
-        alert("You've won the game!");
-        wins++;
-        reset();
-    };
-
-    function loser() {
-        alert("To bad, would you like to play again?")
-        losses++;
-        reset();
-    };
-
     function reset() {
         magenta = Math.floor(Math.random() * 12) + 1;
         blue = Math.floor(Math.random() * 12) + 1;
@@ -63,43 +50,57 @@ $(document).ready(function () {
         $("#your-score").text(totalScore);
     };
 
+    function winner() {
+        alert("You've won the game!");
+        wins++;
+        reset();
+    };
+
+    function loser() {
+        alert("To bad, would you like to play again?")
+        losses++;
+        reset();
+    };
+
+
+
     $("#magenta").on("click", function () {
         $("#your-score").text(totalScore);
         totalScore = totalScore + magenta;
-        if (totalScore == targetNumber) {
+        if (totalScore === targetNumber) {
             winner();
         }
         else if (totalScore > targetNumber) {
             loser();
         };
     })
-   
+
     $("#blue").on("click", function () {
         $("#your-score").text(totalScore);
         totalScore = totalScore + blue;
-        if (totalScore == targetNumber) {
+        if (totalScore === targetNumber) {
             winner();
         }
         else if (totalScore > targetNumber) {
             loser();
         };
     })
-    
+
     $("#green").on("click", function () {
         $("#your-score").text(totalScore);
         totalScore = totalScore + green;
-        if (totalScore == targetNumber) {
+        if (totalScore === targetNumber) {
             winner();
         }
         else if (totalScore > targetNumber) {
             loser();
         };
     })
-    
+
     $("#red").on("click", function () {
         totalScore = totalScore + red;
         $("#your-score").text(totalScore);
-        if (totalScore == targetNumber) {
+        if (totalScore === targetNumber) {
             winner();
         } else if (totalScore > targetNumber) {
             loser();
