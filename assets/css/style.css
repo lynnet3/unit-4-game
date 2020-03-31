@@ -1,8 +1,5 @@
 body {
-    background-image: url("assets/images/background.jpg");
-    color: white
+    background-color: black;
+    color: white;
 };
-#wins-losses{
-    background-color: slategray;
-};
-#
+

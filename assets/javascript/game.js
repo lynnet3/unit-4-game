@@ -40,14 +40,16 @@ $(document).ready(function () {
         blue = Math.floor(Math.random() * 12) + 1;
         green = Math.floor(Math.random() * 12) + 1;
         red = Math.floor(Math.random() * 12) + 1;
+        totalScore = 0;
         targetNumber = function getRandomInteger(min, max) {
 
             min = Math.ceil(18);
             max = Math.floor(121);
             return Math.floor(Math.random() * (max - min)) + min;
+            
         };
         $("#number-to-add").text(targetNumber);
-        $("#your-score").text(totalScore);
+      
     };
 
     function winner() {
